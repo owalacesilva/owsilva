@@ -1,0 +1,98 @@
+@import "variables";
+
+@import "scss/bootstrap";
+@import "scss/bootstrap-grid";
+
+@import "fonts";
+@import "normalize";
+@import "spacing";
+
+@import "header";
+@import "footer";
+
+.circled {
+  border-radius: 100%;
+}
+
+.header-hero {
+  position: relative;
+  z-index: -1;
+  padding: 0 0 5em 0;
+  background-image: url('../img/banner-1440x960.jpg');
+  color: white;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  h1 {
+    font-weight: bold;
+    font-size: 3em;
+  }
+
+  &.front-page-hero {
+    -webkit-transition: margin-top .4s ease;
+    -o-transition: margin-top .4s ease;
+    transition: margin-top .4s ease;
+    padding-top: 160px;
+    margin-top: -80px;
+  }
+}
+
+.featured-article {
+  padding-top: 3em;
+  padding-bottom: 3em;
+
+  .container {
+    max-width: 1024px;
+  }
+
+  h5 {
+    color: #999;
+    font-weight: bold;
+  }
+
+  .post-title {
+    color: $theme-color;
+    font-weight: bold;
+    font-size: 2em;
+  }
+  
+  .post-desc {
+    font-size: 1.3em;
+  }
+}
+
+.triple-feature {
+  background-color: $theme-color-dark;
+  padding-top: 2em;
+  padding-bottom: 2em;
+
+  h5 {
+    color: #999;
+    font-weight: bold;
+    font-size: 1em;
+  }
+  
+  .post-title {
+    color: $theme-color-light;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+  
+  .post-desc {
+    color: white;
+  }
+}
+
+.narrow {
+  background-color: white;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  
+  h5 {
+    color: $theme-color;
+    font-weight: bold;
+  }
+}
+
